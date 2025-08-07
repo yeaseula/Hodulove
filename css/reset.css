@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	font-size: 1.6rem;
-	line-height: 1.6;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -49,4 +49,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+img {
+    vertical-align: bottom;
 }
