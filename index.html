@@ -33,23 +33,24 @@
                     </nav>
                     <a href="#" class="btn-common-style" download aria-label="파일 다운로드 버튼입니다">Download</a>
                 </div>
+                <button type="button" class="mo-only mobile-menu-btn" aria-label="버튼을 클릭하면 서브 메뉴를 볼 수 있습니다."></button>
             </div>
         </div>
     </header>
     <main>
-        <section class="section1">
+        <section class="banner-section">
             <div class="common-container">
                 <div class="section-depth">
                     <h2 class="ally-hidden">메인 배너 영역 입니다.</h2>
-                    <p class="section1-title">
+                    <p class="banner-title">
                         Lorem Ipsum is simply<br>
-                        dummy text of the printing and
+                        dummy text<br class="mo-br"> of the printing and
                     </p>
-                    <p class="section1-desc">
-                        Lorem Ipsum is simply dummy text of the printing and<br>
+                    <p class="banner-desc">
+                        Lorem Ipsum is simply dummy text of<br class="mo-br"> the printing and<br class="pc-br">
                         typesetting industry. <br>
-                        Lorem Ipsum has been the industry's standard dummy text<br>
-                        ever since the 1500s, when an unknown
+                        Lorem Ipsum has been the industry's<br class="mo-br"> standard dummy text<br class="pc-br">
+                        ever since the 1500s,<br class="mo-br"> when an unknown
                     </p>
                     <a href="#" class="btn-common-style" download aria-label="파일 다운로드 버튼입니다">Download</a>
                 </div>
@@ -60,12 +61,20 @@
             sizes="(min-width:992px) 415px, 197px"
             src="./assets/main-cat-s.png" class="hodu-on-box" alt="상자를 뒤집어 쓴 고양이 호두">
         </section>
-        <section class="section2">
+        <section class="introduce-section">
             <div class="common-container">
                 <div class="section-depth">
                     <h2 class="ally-hidden">호두를 소개하는 영역입니다.</h2>
                     <div class="img-box">
-                        <img src="./assets/se2-img-660.png" alt="침대에 누워있는 고양이 호두">
+                        <img src="./assets/se2-hodu-660.png" alt="" class="cont-img">
+                        <!-- <img
+                        srcset="
+                        ./assets/se2-hodu-990.png 990w,
+                        ./assets/se2-hodu-660.png 660w,
+                        ./assets/se2-hodu-330.png 330w
+                        "
+                        sizes="(max-width:992px) 660px,(max-width:380px) 100%, 100%"
+                        src="./assets/se2-hodu-660.png" alt="침대에 누워있는 고양이 호두"> -->
                     </div>
                     <div class="text-box">
                         <p>
@@ -80,13 +89,13 @@
                 </div>
             </div>
         </section>
-        <section class="section3">
+        <section class="gallery-section">
             <div class="common-container">
                 <h2 class="ally-hidden">호두의 사진 갤러리 입니다</h2>
-                <p class="section3-title">
+                <p class="gallery-title">
                     dummy text of the printing and dummy
                 </p>
-                <p class="section3-desc">
+                <p class="gallery-desc">
                     Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                 </p>
@@ -98,7 +107,7 @@
                         ./assets/se3-img.png 378w
                         "
                         sizes="(min-width:992px) 378px, 284px"
-                        src="./assets/se3-img.png" alt="캣타워 위에 누워있는 호두">
+                        src="./assets/se3-img.png" class="cont-img" alt="캣타워 위에 누워있는 호두">
                     </li>
                     <li class="slide-img">
                         <img
@@ -107,7 +116,7 @@
                         ./assets/se3-img2.png 378w
                         "
                         sizes="(min-width:992px) 378px, 284px"
-                        src="./assets/se3-img2.png" alt="벽 보고 앉아있는 호두">
+                        src="./assets/se3-img2.png" class="cont-img" alt="벽 보고 앉아있는 호두">
                     </li>
                     <li class="slide-img">
                         <img
@@ -116,27 +125,30 @@
                         ./assets/se3-img3.jpg 378w
                         "
                         sizes="(min-width:992px) 378px, 284px"
-                        src="./assets/se3-img3.jpg" alt="카메라를 노려보는 호두">
+                        src="./assets/se3-img3.jpg" class="cont-img" alt="카메라를 노려보는 호두">
                     </li>
                 </ul>
                 <div class="more-view-contaner">
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown<br class="mo-br">
                         Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
                     <a href="#" class="btn-common-style more-view" aria-label="상세정보 더 보기 버튼">Learn More</a>
                 </div>
             </div>
         </section>
-        <section class="section4">
+        <section class="subscribe-section">
             <div class="common-container">
                 <h2 class="ally-hidden">블로그 구독을 위한 이메일 입력</h2>
                 <div class="form-field">
                     <div class="text-box">
-                        <p class="form-title">Subscribe to our Blog post</p>
-                        <p class="form-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                        Lorem Ipsum has been the industry's standard dummy text </p>
+                        <p class="form-title">Subscribe to our <br class="mo-br">Blog post</p>
+                        <p class="form-desc">
+                            Lorem Ipsum is simply dummy text of<br class="mo-br">
+                            the printing and typesetting industry.<br>
+                            Lorem Ipsum has been the industry's <br class="mo-br">
+                            standard dummy text </p>
                     </div>
                     <form action="">
                         <label for="email-filed" class="ally-hidden">이메일 입력 필드</label>
@@ -151,10 +163,10 @@
         <div class="common-container">
             <div class="footer-depth">
                 <h1>
-                    <img src="./assets/footer-logo.svg" alt="호두 랜딩페이지 로고">
+                    <img src="./assets/footer-logo.svg" alt="호두 랜딩페이지 로고" class="footer-logo">
                 </h1>
                 <div class="navi-box footer-ver">
-                    <nav>
+                    <nav class="sns-nav">
                         <ul>
                             <li><a href="#" aria-label="블로그 이동 버튼"><img src="./assets/blog.svg" alt="블로그"></a></li>
                             <li><a href="#" aria-label="인스타그램 이동 버튼"><img src="./assets/instagram.svg" alt="인스타그램"></a></li>
@@ -163,6 +175,14 @@
                         </ul>
                     </nav>
                 </div>
+                <nav class="mo-only footer-menu-box">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </footer>
