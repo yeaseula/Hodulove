@@ -36,7 +36,7 @@ ol, ul, li {
 	list-style: none;
 }
 
-a {text-decoration: unset;}
+a {text-decoration: unset; color: rgba(0, 0, 0, 1);}
 blockquote, q {
 	quotes: none;
 }
