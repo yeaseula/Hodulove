@@ -467,13 +467,13 @@ footer .footer-depth {
         padding: 20px 32px 38px;
     }
     .slide-scroll::-webkit-scrollbar  {
-        height: 5px;
+        height: 6px;
     }
-    .slide-scroll:hover::-webkit-scrollbar-thumb {
+    .slide-wrap:hover .slide-scroll::-webkit-scrollbar-thumb {
         background: var(--sub-color);
         border-radius: 10px;
     }
-    .slide-scroll:hover::-webkit-scrollbar-track {
+    .slide-wrap:hover .slide-scroll::-webkit-scrollbar-track {
         background: var(--main-color);
     }
     .gallery-section .slide-wrapper {
