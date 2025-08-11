@@ -225,21 +225,23 @@
     </aside>
     <button type="button" id="scroll-top" aria-label="버튼을 누르면 최상단으로 올라갑니다"></button>
     <script>
-        window.addEventListener('scroll', () => {
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const scrollHeight = document.documentElement.scrollHeight;
-        const clientHeight = document.documentElement.clientHeight;
+        window.addEventListener('DOMContentLoaded',()=>{
+            window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
 
-        const scrollBottom = scrollHeight - (scrollTop + clientHeight);
+            const scrollBottom = scrollHeight - (scrollTop + clientHeight);
 
-        const scrollBtn = document.getElementById('scroll-top');
+            const scrollBtn = document.getElementById('scroll-top');
 
-        if (scrollBottom <= 0) {
-            scrollBtn.style.bottom = '200px';
-        } else {
-            scrollBtn.style.bottom = '24px';
-        }
-        });
+            if (scrollBottom <= 0) {
+                scrollBtn.style.bottom = '200px';
+            } else {
+                scrollBtn.style.bottom = '24px';
+            }
+            });
+        })
     </script>
 </body>
 </html>
