@@ -80,6 +80,7 @@
 
 /* scroll top */
 #scroll-top {
+    visibility: hidden;
     position: fixed;
     right: 24px;
     bottom: 24px;
@@ -88,7 +89,7 @@
     height: 50px;
     border:1px solid rgba(118, 118, 118, 1);
     border-radius: 500%;
-    opacity: 0.8;
+    opacity: 0.7;
     cursor: pointer;
     transition: all 0.2s;
     background-color: #fff;
