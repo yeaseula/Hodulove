@@ -330,12 +330,12 @@ footer .footer-depth {
 }
 .footer-depth .sns-nav li a img { transition: all 0.3s;}
 .footer-depth .sns-nav li a:hover img {
-    transform: scale(1.15);
+    transform: scale(1.25);
 }
 
 /* modal */
 .modal-submit {
-    display: none;
+    display: block;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -344,7 +344,8 @@ footer .footer-depth {
     width: 600px;
     padding: 60px 0 40px 0;
     border-radius: 30px;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    border: unset;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
     background: url('../assets/modal-background.png') no-repeat center / cover;
     text-align: center;
 }
@@ -600,7 +601,13 @@ footer .footer-depth {
     .footer-menu-box ul li {
         margin-bottom: 15px;
         font-size: 14px;
+    }
+    .footer-menu-box ul a {
         color: rgba(118, 118, 118, 1);
+        transition: all 0.2s;
+    }
+    .footer-menu-box ul a:hover {
+        color: var(--text-color);
     }
 
     /* modal */
