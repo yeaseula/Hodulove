@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	font-size: 1.6rem;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 
@@ -51,4 +51,7 @@ table {
 }
 img {
     vertical-align: bottom;
+}
+button {
+	cursor: pointer;
 }

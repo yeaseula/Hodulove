@@ -14,7 +14,6 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/page.css">
-
   </head>
   <body>
     <header>
@@ -31,9 +30,9 @@
                             <li><a href="#">Support</a></li>
                         </ul>
                     </nav>
-                    <a href="#" class="btn-common-style" download aria-label="파일 다운로드 버튼입니다">Download</a>
+                    <a href="#" class="btn-common-style" download aria-label="파일 다운로드 버튼">Download</a>
                 </div>
-                <button type="button" class="mo-only mobile-menu-btn" aria-label="버튼을 클릭하면 서브 메뉴를 볼 수 있습니다."></button>
+                <button type="button" class="tab-only mobile-menu-btn" aria-label="버튼을 클릭하면 서브 메뉴를 볼 수 있습니다"></button>
             </div>
         </div>
     </header>
@@ -66,15 +65,16 @@
                 <div class="section-depth">
                     <h2 class="ally-hidden">호두를 소개하는 영역입니다.</h2>
                     <div class="img-box">
-                        <img src="./assets/se2-hodu-660.png" alt="" class="cont-img">
-                        <!-- <img
+                        <img
                         srcset="
                         ./assets/se2-hodu-990.png 990w,
                         ./assets/se2-hodu-660.png 660w,
                         ./assets/se2-hodu-330.png 330w
                         "
-                        sizes="(max-width:992px) 660px,(max-width:380px) 100%, 100%"
-                        src="./assets/se2-hodu-660.png" alt="침대에 누워있는 고양이 호두"> -->
+                        sizes="(min-width:992px) 660px,(min-width:380px) 990px, 330px"
+                        src="./assets/se2-hodu-660.png"
+                        class="cont-img"
+                        alt="침대에 누워있는 고양이 호두">
                     </div>
                     <div class="text-box">
                         <p>
@@ -156,8 +156,8 @@
                     </div>
                     <form action="">
                         <label for="email-filed" class="ally-hidden">이메일 입력 필드</label>
-                        <input type="email" name="email-input" id="email-filed" placeholder="Enter your e-mail address">
-                        <button type="submit" class="btn-common-style" aria-label="이메일 입력 버튼">Subscribe</button>
+                        <input type="email" name="email-input" id="email-filed" placeholder="Enter your e-mail address" required>
+                        <button type="button" class="btn-common-style" aria-label="이메일 제출 버튼">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                         </ul>
                     </nav>
                 </div>
-                <nav class="tab-only-menu footer-menu-box">
+                <nav class="tab-only footer-menu-box">
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Blog</a></li>
@@ -190,6 +190,36 @@
             </div>
         </div>
     </footer>
+    <aside class="modal-submit">
+        <h2 class="ally-hidden">이메일 입력 완료 알림 모달입니다</h2>
+        <div class="modal-contents">
+            <img
+            srcset="
+            ./assets/modal-hodu-110.png 110w,
+            ./assets/modal-hodu-60.png 60w
+            "
+            sizes="(min-width:768px) 110px, 60px"
+            src="./assets/modal-hodu-110.png" alt="호두의 얼굴">
+            <p>Thank you!</p>
+            <p>Lorem Ipsum is simply dummy <span class="tab-only"></span>
+                text of the printing industry.</p>
+            <button type="submit" class="btn-common-style" aria-label="버튼을 누르면 이메일 제출이 완료됩니다">OK! I Love HODU</button>
+        </div>
+    </aside>
+    <aside class="tab-only hamburger-menu-box">
+        <h2 class="ally-hidden">서브 메뉴 목록</h2>
+        <div class="menu-head">
+            <button type="button" aria-label="서브 메뉴 닫기 버튼"></button>
+        </div>
+        <div class="menu-cont">
+            <nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+            </nav>
+            <a href="#" class="btn-common-style" download aria-label="파일 다운로드 버튼">Download</a>
+        </div>
+    </aside>
     <button type="button" id="scroll-top" aria-label="버튼을 누르면 최상단으로 올라갑니다"></button>
   </body>
 </html>
