@@ -24,7 +24,7 @@
                     <img src="./assets/header-logo.svg" alt="호두 랜딩페이지 로고">
                 </h1>
                 <div class="navi-box">
-                    <nav>
+                    <nav aria-label="서브페이지 메뉴">
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
@@ -52,7 +52,7 @@
                         Lorem Ipsum has been the industry's<span class="tab-only"></span> standard dummy text<br class="pc-only">
                         ever since the 1500s,<span class="tab-only"></span> when an unknown
                     </p>
-                    <a href="#" class="btn-common-style" download aria-label="파일 다운로드 버튼입니다">Download</a>
+                    <a href="#" class="btn-common-style" download>Download</a>
                 </div>
             </div>
             <img srcset="
@@ -139,7 +139,7 @@
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                         Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
-                    <a href="#" class="btn-common-style more-view" aria-label="상세정보 더 보기 버튼">Learn More</a>
+                    <a href="#" class="btn-common-style more-view">Learn More</a>
                 </div>
             </div>
         </section>
@@ -155,10 +155,10 @@
                             Lorem Ipsum has been the industry's
                             standard dummy text </p>
                     </div>
-                    <form action="javascript:void(0)" method="post">
-                        <label for="email-filed" class="ally-hidden">이메일 입력 필드</label>
-                        <input type="email" name="email-input" id="email-filed" placeholder="Enter your e-mail address" required>
-                        <button type="button" class="btn-common-style form-style" aria-label="이메일 제출 버튼">Subscribe</button>
+                    <form action="#" method="post">
+                        <label for="email-field" class="ally-hidden">구독을 위한 이메일 입력 공간</label>
+                        <input type="email" name="email-input" id="email-field" placeholder="Enter your e-mail address" required>
+                        <button type="button" class="btn-common-style form-style">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                     <img src="./assets/footer-logo.svg" alt="호두 랜딩페이지 로고" class="footer-logo">
                 </h1>
                 <div class="navi-box footer-ver">
-                    <nav class="sns-nav">
+                    <nav class="sns-nav" aria-label="sns이동을 위한 메뉴">
                         <ul>
                             <li><a href="#" aria-label="블로그 이동 버튼"><img src="./assets/blog.svg" alt="블로그"></a></li>
                             <li><a href="#" aria-label="인스타그램 이동 버튼"><img src="./assets/instagram.svg" alt="인스타그램"></a></li>
@@ -180,7 +180,7 @@
                         </ul>
                     </nav>
                 </div>
-                <nav class="tab-only footer-menu-box">
+                <nav class="tab-only footer-menu-box" aria-label="서브페이지와 이용약관 메뉴">
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Blog</a></li>
@@ -191,9 +191,9 @@
             </div>
         </div>
     </footer>
-    <aside class="modal-submit">
-        <h2 class="ally-hidden">이메일 입력 완료 알림 모달입니다</h2>
-        <div class="modal-contents">
+    <dialog role="subscribedialog" aria-labelledby="modal-title" aria-describedby="modal-contents" class="modal-submit">
+        <h2 class="ally-hidden" id="modal-title">이메일 입력 완료 알림 모달</h2>
+        <div class="modal-contents" id="modal-contents">
             <img
             srcset="
             ./assets/modal-hodu-110.png 110w,
@@ -206,7 +206,7 @@
                 text of the printing industry.</p>
             <button type="submit" class="btn-common-style" aria-label="버튼을 누르면 이메일 제출이 완료됩니다">OK! I Love HODU</button>
         </div>
-    </aside>
+    </dialog>
     <aside class="tab-only hamburger-menu-box">
         <h2 class="ally-hidden">서브 메뉴 목록</h2>
         <div class="menu-head">
@@ -220,9 +220,26 @@
                     <li><a href="#">Support</a></li>
                 </ul>
             </nav>
-            <a href="#" class="btn-common-style" download aria-label="파일 다운로드 버튼">Download</a>
+            <a href="#" class="btn-common-style" download>Download</a>
         </div>
     </aside>
     <button type="button" id="scroll-top" aria-label="버튼을 누르면 최상단으로 올라갑니다"></button>
-  </body>
+    <script>
+        window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+
+        const scrollBottom = scrollHeight - (scrollTop + clientHeight);
+
+        const scrollBtn = document.getElementById('scroll-top');
+
+        if (scrollBottom <= 0) {
+            scrollBtn.style.bottom = '200px';
+        } else {
+            scrollBtn.style.bottom = '24px';
+        }
+        });
+    </script>
+</body>
 </html>
