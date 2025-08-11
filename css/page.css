@@ -43,6 +43,7 @@ body { font-family: 'Spoqa Han Sans Neo', sans-serif; color: var(--text-color); 
     font-size: 1.6rem;
     font-weight: 700;
     color: #fff;
+    border: 1px solid var(--sub-color);
     background-color: var(--sub-color);
     transition: all 0.2s;
 }
