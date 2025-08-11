@@ -24,7 +24,6 @@
     url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf') format('truetype');
 }
 
-
 * { font-family: 'Spoqa Han Sans Neo', -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Helvetica Neue", system-ui, sans-serif;
@@ -57,14 +56,14 @@
     color: var(--sub-color);
 }
 
-
-/* contents image */
+/* contents image style */
 .cont-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* common display style */
 .pc-only { display: block; }
 .mo-only,.tab-only { display: none; }
 
@@ -116,6 +115,7 @@ header .header-depth {
 }
 header h1 img {
     max-width: 132px;
+    width: 132px;
 }
 .navi-box {
     display: flex;
@@ -161,7 +161,6 @@ header h1 img {
 }
 
 /* section2 - introduce */
-
 .introduce-section {
     padding-top: 80px;
     position: relative;
@@ -216,7 +215,6 @@ header h1 img {
     display: flex;
     gap: 72px;
 }
-
 .gallery-section .slide-img {
     flex-basis: 378px;
     aspect-ratio: 1;
@@ -307,7 +305,6 @@ header h1 img {
 }
 .subscribe-section button {
     flex-basis: 136px;
-    border: unset;
 }
 
 /* footer */
@@ -537,6 +534,7 @@ footer .footer-depth {
 @media screen and (max-width:768px) {
     .tab-only { display: block; }
     .navi-box:not(.footer-ver) { display: none; }
+
     /* section2 - introduce */
     .introduce-section {
         padding-top: 40px;
@@ -566,6 +564,7 @@ footer .footer-depth {
         flex-basis: initial;
         align-self: end;
     }
+
     /* footer */
     footer {
         padding: 30px 0;
@@ -602,6 +601,7 @@ footer .footer-depth {
         font-size: 14px;
         color: rgba(118, 118, 118, 1);
     }
+
     /* modal */
     .modal-submit {
         width: 300px;
@@ -615,6 +615,7 @@ footer .footer-depth {
     .modal-submit p:nth-of-type(2) {
         margin-bottom: 28px;
     }
+
     /* mobile hamburger menu */
     .hamburger-menu-box {
         display: none;
