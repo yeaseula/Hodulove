@@ -33,7 +33,7 @@
                     </nav>
                     <a href="#" class="btn-common-style" download aria-label="파일 다운로드 버튼">Download</a>
                 </div>
-                <button type="button" class="tab-only mobile-menu-btn" aria-label="버튼을 클릭하면 서브 메뉴를 볼 수 있습니다"></button>
+                <button type="button" id="hamburger-open-btn" class="tab-only mobile-menu-btn" aria-label="버튼을 클릭하면 서브 메뉴를 볼 수 있습니다"></button>
             </div>
         </div>
     </header>
@@ -207,10 +207,10 @@
             <button type="submit" id="modal-close-btn" class="btn-common-style" aria-label="버튼을 누르면 이메일 제출이 완료됩니다">OK! I Love HODU</button>
         </div>
     </dialog>
-    <aside class="tab-only hamburger-menu-box">
+    <aside id="hamburger-menu" class="tab-only hamburger-menu-box">
         <h2 class="ally-hidden">서브 메뉴 목록</h2>
         <div class="menu-head">
-            <button type="button" aria-label="서브 메뉴 닫기 버튼"></button>
+            <button type="button" id="hamburger-close-btn" aria-label="서브 메뉴 닫기 버튼"></button>
         </div>
         <div class="menu-cont">
             <nav>
@@ -231,11 +231,9 @@
 
             const emailInput = $('input[type="email"]');
             const modalOpenBtn = $('#modal-open-btn');
-            const modalPop = $('.modal-submit');
-
             const modalCloseBtn = $('#modal-close-btn');
 
-            function ModalFnc () {
+            function ModalFnc (modalPop) {
                 const modalHas = modalPop.classList.contains('on');
                 if(modalHas) {
                     modalPop.classList.remove('on')
@@ -248,12 +246,14 @@
                 if(emailInput.value == '') {
                     alert('이메일 주소를 입력하세요');
                 } else {
-                    ModalFnc ();
+                    const modalPop = $('.modal-submit');
+                    ModalFnc (modalPop);
                 }
             })
 
             modalCloseBtn.addEventListener('click',()=>{
-                ModalFnc ();
+                const modalPop = $('.modal-submit');
+                ModalFnc (modalPop);
             })
 
             window.addEventListener('scroll', () => {
@@ -276,6 +276,17 @@
                     scrollBtn.style.bottom = '24px';
                 }
             });
+
+            const HamburgerOpen = $('#hamburger-open-btn');
+            const HamburgerClose = $('#hamburger-close-btn')
+            HamburgerOpen.addEventListener('click',()=>{
+                const modalPop = $('#hamburger-menu');
+                ModalFnc(modalPop);
+            })
+            HamburgerClose.addEventListener('click',()=>{
+                const modalPop = $('#hamburger-menu');
+                ModalFnc(modalPop);
+            })
         })
     </script>
 </body>

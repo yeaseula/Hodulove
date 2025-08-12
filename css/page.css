@@ -624,14 +624,17 @@ footer .footer-depth {
 
     /* mobile hamburger menu */
     .hamburger-menu-box {
-        display: none;
         position: fixed;
         top: 0;
         right: 0;
         z-index: 11;
-        width: 289px;
+        width: 0;
         height: 100vh;
         background-color: var(--point-color);
+        transition: all 0.2s;
+    }
+    .hamburger-menu-box.on {
+        width: 289px;
     }
     .hamburger-menu-box .menu-head {
         padding:22px 20px;
