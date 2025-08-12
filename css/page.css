@@ -344,6 +344,9 @@ footer .footer-depth {
     background: url('../assets/modal-background.png') no-repeat center / cover;
     text-align: center;
 }
+.modal-submit.on {
+    display: block;
+}
 .modal-submit p:first-of-type {
     margin: 24px 0 12px 0;
     font-size: 3.6rem;
