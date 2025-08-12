@@ -291,6 +291,11 @@ header h1 img {
     align-self: stretch;
     border: unset;
     padding-left: 53px;
+    font-size: 1.6rem;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+.subscribe-section input[type="email"]::placeholder {
+    color: #767676;
 }
 .subscribe-section form:focus-within {
     outline: 3px solid var(--sub-color);
@@ -522,8 +527,13 @@ footer .footer-depth {
         height: 30px;
         align-self: initial;
         padding-left: 33px;
+        font-size: 1.4rem;
+    }
+    .subscribe-section input[type="email"]::placeholder {
+        font-size: 1.4rem;
     }
     .subscribe-section button {
+        padding: 11.5px 24px;
         position: absolute;
         top: 60px;
         z-index: 10;
