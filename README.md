@@ -82,6 +82,17 @@
 - 992px 이하부터 모바일 디자인 단계적 적용
 - 폼 영역은 디자인 의도에 맞춰 PC 비율 유지하며 호두 이미지가 잘 보이도록 조정
 - 텍스트 크기와 여백은 비율 단위와 CSS min() 함수 활용해 유연하게 조절
+```css
+.banner-section .banner-title {
+    font-size: min(4.8rem, 4.3vw);
+}
+
+.introduce-section .section-depth {
+    display: flex;
+    align-items: center;
+    gap: min(110px, 7.6vw);
+}
+```
 
 #### 코드 최적화
 - 공통 디자인 컴포넌트화로 CSS 중복 최소화
@@ -143,6 +154,7 @@
 
 - 이메일 유효성 검사 기능 추가
 - 모바일 side menu 노출 시 백그라운드 클릭 방지 기능 추가
+
 
 
 
