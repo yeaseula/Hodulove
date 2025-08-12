@@ -198,7 +198,7 @@
             </div>
         </div>
     </footer>
-    <dialog role="alertdialog" aria-labelledby="modal-title" aria-describedby="modal-contents" class="modal-submit">
+    <dialog role="dialog" aria-labelledby="modal-title" aria-describedby="modal-contents" class="modal-submit" aria-hidden="true">
         <h2 class="ally-hidden" id="modal-title">이메일 입력 완료 알림 모달</h2>
         <div class="modal-contents" id="modal-contents">
             <img
@@ -214,7 +214,7 @@
             <button type="submit" id="modal-close-btn" class="btn-common-style" aria-label="버튼을 누르면 이메일 제출이 완료됩니다">OK! I Love HODU</button>
         </div>
     </dialog>
-    <aside id="hamburger-menu" class="tab-only hamburger-menu-box">
+    <aside id="hamburger-menu" class="tab-only hamburger-menu-box" role="dialog" aria-modal="true" aria-labelledby="sidebarTitle" aria-hidden="true">
         <h2 class="ally-hidden">서브 메뉴 목록</h2>
         <div class="menu-head">
             <button type="button" id="hamburger-close-btn" aria-label="서브 메뉴 닫기 버튼"></button>

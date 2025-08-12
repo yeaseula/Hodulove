@@ -12,11 +12,13 @@ window.addEventListener('DOMContentLoaded',()=>{
             alert('이메일 주소를 입력하세요');
         } else {
             modalPop.showModal();
+            modalPop.setAttribute('aria-hidden', 'false');
         }
     })
 
     modalCloseBtn.addEventListener('click',()=>{
         modalPop.close();
+        modalPop.setAttribute('aria-hidden', 'true');
     })
 
     //side menu function - 모달 팝업과 같은 기능을 합니다
