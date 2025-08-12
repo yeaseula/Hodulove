@@ -87,7 +87,7 @@
 
 #### 폰트 최적화
 
-- @font-face로 **필요한 weight(400, 700)**만 로드
+- 직접 폰트를 다운받아 **필요한 weight(400, 700)**만 로드
 - 서브셋 폰트만 가져와 불필요한 글리프 로딩 최소화
 - WOFF2 → WOFF → TTF 순서 폴백으로 브라우저 호환성 확보
 - 용량 절감 + 로딩 속도 개선으로 레이아웃 시프트 방지 효과 기대
@@ -126,6 +126,14 @@
 - png/jpeg 확장자의 100KB 이상 이미지들은 webp 확장자로 변경, 80%~90%가량 용량 절감
 <img width="560" height="109" alt="image" src="https://github.com/user-attachments/assets/5c777326-edb7-4e4e-b54d-79876be7c8c5" />
 
+#### 폰트파일 로딩 지연으로 레이아웃 시프트 오류
+- 필요한 사이즈만 직접 로컬에 다운, 폰트 관련 파일을 head 최상단에 위치시켜 로딩 지연 문제 해결<br />
+
+**개선 전**
+<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/f7ad79cc-33f9-4d3f-9d3f-e098599f1c5c" /><br />
+**개선 후**
+<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/975a0e31-98da-448b-a941-2be8245fbbe2" />
+
 
 ---
 
@@ -133,5 +141,6 @@
 
 - 이메일 유효성 검사 기능 추가
 - 모바일 side menu 노출 시 백그라운드 클릭 방지 기능 추가
+
 
 
