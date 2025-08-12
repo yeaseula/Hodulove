@@ -39,7 +39,9 @@
 .
 └── HODULOVER/
     ├── assets/
+    ├── fonts/
     ├── css/
+    │   ├── fonts.css
     │   ├── reset.css
     │   └── page.css
     ├── js/
@@ -141,6 +143,7 @@
 
 - 이메일 유효성 검사 기능 추가
 - 모바일 side menu 노출 시 백그라운드 클릭 방지 기능 추가
+
 
 
 
