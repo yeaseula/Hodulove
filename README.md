@@ -121,6 +121,9 @@
 - **오류 수정 시** : 발생한 오류 내용과 개선 방법을 간략히 기재
 - **목표** : 커밋 title만 봐도 어떤 작업을 했는지 명확히 알아볼 수 있도록 파악 가능하게 할 것.
 
+<img width="600" height="202" alt="image" src="https://github.com/user-attachments/assets/483c9bc5-efe8-4b1f-b7d5-1635a8fa0dda" />
+
+
 ---
 
 ### 문제 개선 방법
@@ -154,6 +157,7 @@
 
 - 이메일 유효성 검사 기능 추가
 - 모바일 side menu 노출 시 백그라운드 클릭 방지 기능 추가
+
 
 
 
