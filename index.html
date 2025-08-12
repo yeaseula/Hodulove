@@ -226,7 +226,6 @@
     <button type="button" id="scroll-top" aria-label="버튼을 누르면 최상단으로 올라갑니다"></button>
     <script>
         window.addEventListener('DOMContentLoaded',()=>{
-
             const $ = (node) => document.querySelector(node);
 
             const emailInput = $('input[type="email"]');
@@ -286,6 +285,11 @@
             HamburgerClose.addEventListener('click',()=>{
                 const modalPop = $('#hamburger-menu');
                 ModalFnc(modalPop);
+            })
+
+            const ScrollTop = $('#scroll-top');
+            ScrollTop.addEventListener('click',()=>{
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             })
         })
     </script>
