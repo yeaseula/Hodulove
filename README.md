@@ -42,6 +42,8 @@
     ├── css/
     │   ├── reset.css
     │   └── page.css
+    ├── js/
+    │   └── main.js
     └── index.html
 ```
 
@@ -127,6 +129,6 @@
 
 ### 앞으로의 계획
 
-- 모바일 화면에서 햄버거 메뉴 클릭 시 사이드바 노출 기능 추가 - javascript 활용
-- form 제출 시 모달 팝업 노출 기능 추가 - javascript 활용
-- Scroll Top 클릭 시 페이지 상단으로 이동 기능 추가 - javascript 활용
+- 이메일 유효성 검사 기능 추가
+- 모바일 side menu 노출 시 백그라운드 클릭 방지 기능 추가
+
