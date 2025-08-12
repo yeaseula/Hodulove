@@ -11,10 +11,16 @@
     <meta property="og:type" content="website">
 
     <title>HODU - 고양이 호두 랜딩페이지</title>
-    <link rel="icon" href="./assets/modal-hodu-60.png" type="image/x-icon">
 
+    <!--font file-->
+    <link rel="preload" href="./fonts/SpoqaHanSansNeo-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/SpoqaHanSansNeo-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="icon" href="./assets/modal-hodu-60.png" type="image/x-icon">
+    <!--my css-->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/page.css">
+    <!--my javascript-->
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -43,7 +49,7 @@
             <div class="common-container">
                 <div class="section-depth">
                     <h2 class="ally-hidden">메인 배너 영역 입니다.</h2>
-                    <p class="banner-title">
+                    <p class="banner-title fw-b">
                         Lorem Ipsum is simply<br>
                         dummy text<span class="tab-only"></span> of the printing and
                     </p>
@@ -79,7 +85,7 @@
                         alt="침대에 누워있는 고양이 호두">
                     </div>
                     <div class="text-box">
-                        <p>
+                        <p class="fw-b">
                             Lorem Ipsum is simply<br>
                             dummy text of the printing <br>
                             and dummy text
@@ -94,11 +100,11 @@
         <section class="gallery-section">
             <div class="common-container">
                 <h2 class="ally-hidden">호두의 사진 갤러리 입니다</h2>
-                <p class="gallery-title">
+                <p class="gallery-title fw-b">
                     dummy text of the printing<span class="tab-only"></span> and dummy
                 </p>
                 <p class="gallery-desc">
-                    Lorem Ipsum is simply <span class="point-color">dummy text</span> of the <span class="mo-only"></span>printing and typesetting industry.<br>
+                    Lorem Ipsum is simply <span class="point-color fw-b">dummy text</span> of the <span class="mo-only"></span>printing and typesetting industry.<br>
                     Lorem Ipsum has been the industry's <span class="mo-only"></span>standard dummy text ever since the 1500s,<span class="mo-only"></span> when an unknown
                 </p>
                 <div class="slide-wrap">
@@ -149,7 +155,7 @@
                 <h2 class="ally-hidden">블로그 구독을 위한 이메일 입력</h2>
                 <div class="form-field">
                     <div class="text-box">
-                        <p class="form-title">Subscribe to our <span class="xs-mo-only"></span>Blog post</p>
+                        <p class="form-title fw-b">Subscribe to our <span class="xs-mo-only"></span>Blog post</p>
                         <p class="form-desc">
                             Lorem Ipsum is simply dummy text of
                             the printing and typesetting industry.<br>
@@ -202,7 +208,7 @@
             "
             sizes="(min-width:768px) 110px, 60px"
             src="./assets/modal-hodu-110.png" alt="호두의 얼굴">
-            <p>Thank you!</p>
+            <p class="fw-b">Thank you!</p>
             <p>Lorem Ipsum is simply dummy <span class="tab-only"></span>
                 text of the printing industry.</p>
             <button type="submit" id="modal-close-btn" class="btn-common-style" aria-label="버튼을 누르면 이메일 제출이 완료됩니다">OK! I Love HODU</button>
@@ -216,9 +222,9 @@
         <div class="menu-cont">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="#" class="fw-b">Home</a></li>
+                    <li><a href="#" class="fw-b">About</a></li>
+                    <li><a href="#" class="fw-b">Support</a></li>
                 </ul>
             </nav>
             <a href="#" class="btn-common-style" download>Download</a>

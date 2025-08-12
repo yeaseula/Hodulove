@@ -5,26 +5,9 @@
     --sub-color :rgba(217, 118, 82, 1);
     --point-color : rgba(38, 49, 64, 1);
     --text-color : rgba(0, 0, 0, 1);
-
-}
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    font-weight: 400;
-    src: local('Spoqa Han Sans Neo Regular'),
-    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    font-weight: 700;
-    src: local('Spoqa Han Sans Neo Bold'),
-    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf') format('truetype');
 }
 
-body { font-family: 'Spoqa Han Sans Neo', sans-serif; color: var(--text-color); }
+body { font-family: 'Spoqa Han Sans Neo-Regular', sans-serif; color: var(--text-color); }
 /* common container */
 .common-container {
     /* 콘텐츠 영역 - 1280 */
@@ -41,7 +24,7 @@ body { font-family: 'Spoqa Han Sans Neo', sans-serif; color: var(--text-color); 
     border-radius: 40px;
     text-align: center;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-family: 'Spoqa Han Sans Neo-Bold';
     color: #fff;
     border: 1px solid var(--sub-color);
     background-color: var(--sub-color);
@@ -144,7 +127,6 @@ header h1 img {
 }
 .banner-section .banner-title {
     font-size: min(4.8rem, 4.3vw);
-    font-weight: 700;
 }
 .banner-section .banner-desc {
     margin: 40px 0;
@@ -181,7 +163,6 @@ header h1 img {
 }
 .introduce-section .text-box p:first-child {
     font-size: min(3.6rem,2.5vw);
-    font-weight: 700;
 }
 .introduce-section .text-box p:nth-child(2) {
     margin-top: 40px;
@@ -194,7 +175,6 @@ header h1 img {
 }
 .gallery-title {
     font-size: 4.8rem;
-    font-weight: 700;
     color: var(--sub-color);
 }
 .gallery-desc {
@@ -202,7 +182,6 @@ header h1 img {
 }
 .gallery-desc .point-color {
     color: var(--sub-color);
-    font-weight: 700;
 }
 .gallery-section .slide-wrap {
     margin-top: 88px;
@@ -256,7 +235,6 @@ header h1 img {
 }
 .subscribe-section .form-title {
     font-size: 3.6rem;
-    font-weight: 700;
     color: #fff;
 }
 .subscribe-section .form-desc {
@@ -355,7 +333,6 @@ footer .footer-depth {
 .modal-submit p:first-of-type {
     margin: 24px 0 12px 0;
     font-size: 3.6rem;
-    font-weight: 700;
     color: var(--sub-color);
 }
 .modal-submit p:nth-of-type(2) {
@@ -666,7 +643,6 @@ footer .footer-depth {
         margin-bottom: 30px;
     }
     .menu-cont nav a {
-        font-weight: 700;
         color: #fff;
     }
     .menu-cont .btn-common-style {
