@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         } else {
             modalPop.showModal();
             modalPop.setAttribute('aria-hidden', 'false');
+            document.getElementById('modal-title').focus();
         }
     })
 
